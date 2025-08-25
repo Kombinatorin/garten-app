@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+.bubble {
+  @apply rounded-full px-5 py-3 bg-bubble text-ink border border-indigo-200 font-semibold shadow-soft cursor-pointer select-none;
+}
+.bubble:hover { @apply bg-bubbleActive; }
+.badge {
+  @apply bg-accent text-white rounded-full px-2 py-0.5 text-xs ml-2;
+}
+.heading {
+  @apply inline-block bg-bubble px-5 py-3 rounded-2xl border border-indigo-200 font-extrabold text-lg mb-2;
+}
